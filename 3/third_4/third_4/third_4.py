@@ -9,7 +9,10 @@ user_string = input()
 user_string_len = len(user_string)
 #Считаем слова с помощью возвращения количества вхождений подстроки в строку
 # +1 из-за того, что первое слово не начинается с пробела
-user_string_word = user_string.count(" ") + 1
+if user_string.startswith(" "):
+    user_string_word = user_string.count(" ")
+else:
+    user_string_word = user_string.count(" ") + 1
 
 print("Количество символов: " + str(user_string_len))
 print("Количество слов: " + str(user_string_word))

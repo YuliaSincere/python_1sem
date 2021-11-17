@@ -18,5 +18,3 @@ for i in userString.split(" "):
         result = result + " " + i
 print("Результирующая строка - " + result)
 
-
-
